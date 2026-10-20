@@ -15,7 +15,7 @@ const projects = [
       "IoT",
       "Data Analysis"
     ],
-    "image": "/projects/hydroferma.png",
+    "image": `${import.meta.env.BASE_URL}projects/hydroferma.png`,
     "actionLabel": "Video Demo",
     "actionUrl": "https://youtu.be/5X76oaXH9AY",
     "actionType": "video"
@@ -30,7 +30,7 @@ const projects = [
       "Digital Health",
       "Figma"
     ],
-    "image": "/projects/ppdhero.png",
+    "image": `${import.meta.env.BASE_URL}projects/ppdhero.png`,
     "actionLabel": "View Demo",
     "actionUrl": "https://www.figma.com/proto/f3H7rbXIescY8QwqMDEVUy/PPD-UI?node-id=1-2&p=f&t=hgnDtKcvkeBpO8oG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
     "actionType": "prototype"
@@ -44,7 +44,7 @@ const projects = [
       "3D Graphics",
       "Simulation"
     ],
-    "image": "/projects/last-of-us.png",
+    "image": `${import.meta.env.BASE_URL}projects/last-of-us.png`,
     "actionLabel": "Video Demo",
     "actionUrl": "https://youtu.be/VOcx3P577XQ",
     "actionType": "video"
@@ -58,7 +58,7 @@ const projects = [
       "Rover Project",
       "Demonstration"
     ],
-    "image": "/projects/phoenix-2.png",
+    "image": `${import.meta.env.BASE_URL}projects/phoenix-2.png`,
     "actionLabel": "Video",
     "actionUrl": "https://youtu.be/wBwTMOv7OeM?si=Fy921qCMn8OrQq1C",
     "actionType": "video"
@@ -72,7 +72,7 @@ const projects = [
       "Rover Project",
       "Demonstration"
     ],
-    "image": "/projects/phoenix.png",
+    "image": `${import.meta.env.BASE_URL}projects/phoenix.png`,
     "actionLabel": "Video",
     "actionUrl": "https://youtu.be/0ezyJEdleQM?si=vHAGCW39qlHX6Dcv",
     "actionType": "video"
@@ -133,7 +133,7 @@ const projects = [
       "CSS",
       "Firebase"
     ],
-    "image": "/projects/subscriptia.png",
+    "image": `${import.meta.env.BASE_URL}projects/subscriptia.png`,
     "actionLabel": "View Code",
     "actionUrl": "https://github.com/Mahdi3M/Subscriptia",
     "actionType": "code"
@@ -143,7 +143,7 @@ const projects = [
     "period": "2022",
     "description": "A student-focused study portal developed using Python, Django, CSS, and Firebase.",
     "tags": ["Python", "Django", "CSS", "Firebase"],
-    "image": "/projects/student-study-portal.png",
+    "image": `${import.meta.env.BASE_URL}projects/student-study-portal.png`,
     "actionLabel": "View Code",
     "actionUrl": "https://github.com/TasfiaSarah/studyportal",
     "actionType": "code"

@@ -29,8 +29,8 @@ const profile = {
     linkedin: "https://www.linkedin.com/in/tasfia-sara-a690571b3/",
   },
 
-  cvUrl: "/cv.pdf",
-  image: "/profile.jpg",
+  cvUrl: `${import.meta.env.BASE_URL}cv.pdf`,
+  image: `${import.meta.env.BASE_URL}profile.jpg`,
 };
 
 export default profile;

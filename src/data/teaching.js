@@ -109,9 +109,9 @@ export const courseAreas = [
 
 // Replace paths and descriptions here when selecting new classroom photographs.
 export const teachingPhotos = [
-  { src: '/teaching/2.jpg', alt: 'Students and their lecturer gathered outdoors on campus', width: 1280, height: 591, position: '50% 50%' },
-  { src: '/teaching/3.jpg', alt: 'Group selfie with students seated throughout a classroom', width: 1280, height: 960, position: '50% 50%' },
-  { src: '/teaching/4.jpg', alt: 'Classroom group photograph in front of a projection screen', width: 1600, height: 1124, position: '50% 50%' },
-  { src: '/teaching/5.jpg', alt: 'Students and faculty gathered in a computer laboratory', width: 828, height: 504, position: '50% 50%' },
-  { src: '/teaching/6.jpg', alt: 'Students in uniform posing together at the front of a classroom', width: 1600, height: 836, position: '50% 50%' },
+  { src: `${import.meta.env.BASE_URL}teaching/2.jpg`, alt: 'Students and their lecturer gathered outdoors on campus', width: 1280, height: 591, position: '50% 50%' },
+  { src: `${import.meta.env.BASE_URL}teaching/3.jpg`, alt: 'Group selfie with students seated throughout a classroom', width: 1280, height: 960, position: '50% 50%' },
+  { src: `${import.meta.env.BASE_URL}teaching/4.jpg`, alt: 'Classroom group photograph in front of a projection screen', width: 1600, height: 1124, position: '50% 50%' },
+  { src: `${import.meta.env.BASE_URL}teaching/5.jpg`, alt: 'Students and faculty gathered in a computer laboratory', width: 828, height: 504, position: '50% 50%' },
+  { src: `${import.meta.env.BASE_URL}teaching/6.jpg`, alt: 'Students in uniform posing together at the front of a classroom', width: 1600, height: 836, position: '50% 50%' },
 ];

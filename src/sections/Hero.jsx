@@ -1,4 +1,4 @@
-import { ArrowDown, BookOpen, Download, FolderKanban, Mail, MapPin } from 'lucide-react';
+import { ArrowDown, BookOpen, FileText, FolderKanban, Mail, MapPin } from 'lucide-react';
 import profile from '../data/profile';
 
 export default function Hero() {
@@ -14,7 +14,7 @@ export default function Hero() {
           <p className="mt-7 max-w-xl text-base leading-8 text-slate-600 dark:text-slate-400">{profile.bio}</p>
           <div className="mt-6 flex flex-wrap gap-2" aria-label="Research interests">{profile.researchInterests.map(interest => <span key={interest} className="hero-interest-tag">{interest}</span>)}</div>
           <div className="mt-8 flex flex-wrap gap-3">
-            {profile.cvUrl && <a href={profile.cvUrl} download className="button-primary"><Download size={16} aria-hidden="true" />Download CV</a>}
+            {profile.cvUrl && <a href={profile.cvUrl} target="_blank" rel="noopener noreferrer" className="button-primary"><FileText size={16} aria-hidden="true" />View CV</a>}
             <a href="#publications" className="button-secondary">View Publications<BookOpen size={16} aria-hidden="true" /></a>
             <a href="#projects" className="button-secondary">View Projects<FolderKanban size={16} aria-hidden="true" /></a>
             <a href="#contact" className="button-secondary">Contact<Mail size={16} aria-hidden="true" /></a>
