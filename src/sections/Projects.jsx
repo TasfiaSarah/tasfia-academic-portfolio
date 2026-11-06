@@ -32,7 +32,7 @@ export default function Projects() {
     { id: 'demos', items: projects.filter(project => project.displayGroup === 'demos' || (project.actionUrl && project.actionType !== 'code' && !project.tags.includes('Rover Project'))), columns: 'sm:grid-cols-2 xl:grid-cols-3' },
     { id: 'rovers', items: projects.filter(project => project.tags.includes('Rover Project')), columns: 'sm:grid-cols-2' },
     { id: 'code', items: projects.filter(project => !project.displayGroup && project.actionType === 'code'), columns: 'sm:grid-cols-2' },
-    { id: 'additional', items: projects.filter(project => !project.displayGroup && !project.actionUrl), columns: 'sm:grid-cols-2 xl:grid-cols-3' },
+    { id: 'additional', items: projects.filter(project => project.displayGroup === 'additional' || (!project.displayGroup && !project.actionUrl)), columns: 'sm:grid-cols-2 xl:grid-cols-3' },
   ];
   return (
     <Section id="projects" number="06" eyebrow="RESEARCH-BACKED SYSTEMS" title="Notable Projects"
@@ -45,7 +45,7 @@ export default function Projects() {
           ];
           return (
             <article key={project.title} className="flex min-w-0 flex-col overflow-hidden rounded-xl border border-slate-300 bg-[#fffdf8]/80 shadow-sm transition-colors hover:border-teal-700/60 dark:border-white/15 dark:bg-[#151e21]/75 dark:hover:border-teal-300/40">
-              {(project.image || project.actionUrl || project.showPreview) && <ProjectImage key={project.image} project={project} />}
+              {project.displayGroup !== 'additional' && (project.image || project.actionUrl || project.showPreview) && <ProjectImage key={project.image} project={project} />}
               <div className="flex flex-1 flex-col p-5">
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="min-w-0 text-xl font-semibold leading-7 text-slate-900 dark:text-slate-100">{project.title}</h3>

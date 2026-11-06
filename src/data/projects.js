@@ -92,8 +92,8 @@ const projects = [
       "Google Colab"
     ],
     "image": null,
-    "showPreview": true,
-    "displayGroup": "demos",
+    "showPreview": false,
+    "displayGroup": "additional",
     "actionLabel": "View Code",
     "actionUrl": "",
     "actionType": "code"
