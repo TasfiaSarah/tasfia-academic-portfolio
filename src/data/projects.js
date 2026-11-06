@@ -36,6 +36,27 @@ const projects = [
     "actionType": "prototype"
   },
   {
+    "title": "NLP Sentiment Robustness Study",
+    "period": "2026",
+    "description": "A comparative study of a TF-IDF + Logistic Regression baseline and a fine-tuned DistilBERT model for IMDb sentiment classification, with evaluation of robustness to spelling perturbations, prediction flips, and confidence behavior.",
+    "tags": [
+      "Natural Language Processing",
+      "Hugging Face Transformers",
+      "PyTorch",
+      "Scikit-learn",
+      "TF-IDF",
+      "DistilBERT",
+      "Python",
+      "Google Colab"
+    ],
+    "image": null,
+    "showPreview": true,
+    "displayGroup": "demos",
+    "actionLabel": "View Code",
+    "actionUrl": "",
+    "actionType": "code"
+  },
+  {
     "title": "The Last of Us",
     "period": "2023",
     "description": "A Blender-based graphical simulation of a post-apocalyptic environment developed as a visual computing project.",
